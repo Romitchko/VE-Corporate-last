@@ -1,0 +1,12 @@
+
+    <div class="card mb-4">
+    {% if articles.filename %}
+        <img src="assets\images\articles\{{ articles.filename }}" alt="card-img-top" style="width: 100%; height: auto;">
+    {% endif %}
+    <h5 class="card-header">
+             <a href="{{ path('blog.show', {id: articles.id, slug: articles.slug}) }}">{{ articles.title }}</a>
+            </h5>
+        <div class="card-body">
+            <p class="card-text">{{ articles.description | nl2br }}</p>
+        </div>
+    </div> 

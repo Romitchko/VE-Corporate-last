@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title 'Le blog de Vitis Epicuria' %}  
+
+
+{% block body %}
+<!-- <img src="../img/landescapeblog.jpg" class="img-fluid" alt="Responsive image" style="width: 1920px"> -->
+<!--    <div class="jumbotron txt-center">
+        <h1>Vitis epicuria</h1> 
+        <p>Quis Lorem sint et fugiat do tempor fugiat sint ea sunt laboris in. Sint voluptate commodo sint enim veniam.
+        Adipisicing velit voluptate minim nulla ea ea.
+        Lorem irure sint culpa veniam sit ullamco et excepteur sit cupidatat culpa nulla.</p>
+    </div> -->
+
+
+<div class="container mt-4">
+    <h2 class="container mb-4 text-center">Nos derniers articles</h2>
+    <div class="row flex">
+        {% for articles in Articles %}
+            <div class="col-md-6">
+            {% include 'pages/_article.html.twig' %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="pagination">
+        {{ knp_pagination_render(Articles) }}
+
+</div>
+    
+{% endblock %}

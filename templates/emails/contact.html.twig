@@ -1,0 +1,26 @@
+<mjml>
+  <mj-body background-color="#F2F2F2">
+    
+    <mj-section vertical-align="middle" padding-bottom="50px">
+      <mj-column vertical-align="middle">
+        <mj-image width="144px" align="center" src="{{ asset('assets/img/logo_vitis.png') }}" href="https://www.vitis-epicuria.fr" alt="">=</mj-image>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#000001">
+      <mj-column>
+        <mj-text padding-top="0px" padding-bottom="50px" color="#FFFFFE" font-family="Helvetica,Arial,sans-serif" font-size="14px" 
+        line-height="120%">Message de {{ contact.firstname }} {{ contact.lastname }}, envoyé depuis Vitis Corporate. <br /><br /> 
+        {{ contact.message | nl2br }}</mj-text>
+
+        <mj-button width="144px" align="center" href="mailto:{{ contact.email }}" alt="reponse">Répondre</mj-button>
+
+        <mj-text width="40%" align="center" color="#FFFFFE" alt="contactphone">Ou par téléphone : </br>
+        {{ contact.phone }}</mj-text>
+
+
+      </mj-column>
+    </mj-section>
+   
+  </mj-body>
+</mjml>

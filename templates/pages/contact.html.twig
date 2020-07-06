@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block title 'Contacter Vitis Epicuria' %} 
+
+{% block body %}
+    <div class="jumbotron txt-center text-center">
+        <h1>Une question ? Contactez-nous !</h1> 
+        <p>Une personne de chez Vitis Epicuria vous répondra rapidement du lundi au vendredi de 9h00 à 17h00.</p>
+    </div>
+    <section id="covercontact" class="min-vh-80">
+    <div id="cover-caption">
+    <div id="contactForm" class="col-md-12 mt-4">
+        {{ form_start(form) }}
+            <div class="row">
+             <div class="col">{{ form_row(form.firstname) }}</div>
+             <div class="col">{{ form_row(form.lastname) }}</div>
+            </div>
+            <div class="row">
+             <div class="col">{{ form_row(form.phone) }}</div>
+             <div class="col">{{ form_row(form.email) }}</div>
+            </div>
+            {{ form_rest(form) }}
+            <div class="form-group">
+                <button class="btn btn-primary">Envoyer</button>
+            </div>
+        {{ form_end(form) }}
+    </div></br>
+    {% include 'pages/footer.html.twig' %}
+{% endblock %}

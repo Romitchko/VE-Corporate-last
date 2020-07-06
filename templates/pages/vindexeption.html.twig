@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title 'Nos Vins D\'exeption' %}  
+
+{% block body %}
+    <div id="blockvindexeption" class="bodyvincexeption">
+        <p class="lead text-center mt-4 mb-4">Depuis 2004, Vitis Epicuria, implanté au cœur du Bordelais, </br>vous propose
+de très nombreuses références de grands crus viticoles.</br>
+Outre des vins de renom en provenance de France et des grandes régions viticoles mondiales,</br>
+nous vous proposons une conciergerie privée :</br> hébergement de bouteilles, placement de grands crus, optimisations de caves, dépôt-vente…</br>
+N’hésitez pas à nous contacter pour des demandes spécifiques.</br>
+La satisfaction de nos clients découle de la sélection et de la fidélisation des meilleurs viticulteurs.</p>
+    </div>
+    <div class="nosvinsdexeption mt-4 mb-4">
+        <p class="text-center" style="font-size: 2em">Retrouvez tous nos vins d’exception ici :</p>
+    </div>
+
+    <div id="borderexeption">
+        <a href="https://www.vitis-epicuria.com" target="_blank"><img class="logovitisexeption mt-4 mb-4" src="{{ asset('assets/img/logo_vitis.png') }}" class="navbar-brand" alt="Logo" style="width:350px;"></a>
+    </div></br>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <h6 class="text-uppercase font-weight-bold">LIVRAISON OPTIMALE</h6>
+      Nous avons sélectionnées les meilleurs transporteurs pour des livraisons optimisées. 
+      * Livraison offerte en France dès 300€ TTC d’achat hors primeurs.
+    </div>
+    <div class="col-sm">
+    <h6 class="text-uppercase font-weight-bold">SERVICES PERSONNALISÉS</h6>
+      Vous recherchez un vin en particulier, un millésime? Appelez-nous !
+    </div>
+    <div class="col-sm">
+    <h6 class="text-uppercase font-weight-bold">PAIEMENT SÉCURISÉ</h6>
+      Nos systèmes de paiement par carte bancaire sont sécurisés.
+    </div>
+  </div>
+</div></br>
+
+{% include 'pages/footer.html.twig' %}
+    
+{% endblock %}
