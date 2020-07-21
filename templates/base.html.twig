@@ -7,9 +7,9 @@
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     {# Image onglet navigateur #}
         <link rel="icon" href="{{ asset ('assets/img/vitis_icon.png') }}" type="image/png">
-        <title>{% block title %}Bienvenue chez Vitis Epicuria{% endblock %}</title>
+        <title>{% block title %}{% trans %}Bienvenue chez Vitis Epicuria{% endtrans %}{% endblock %}</title>
     {# Typographie #}
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet" type="text/css">
     {# Boostrap & bootswatch theme Lux #}
        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
@@ -40,10 +40,10 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Nos services exclusifs
+          {% trans %}Nos services exclusifs{% endtrans %}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        {#  <a class="dropdown-item {% if menu_actif5 is defined and menu_actif5 == 'notrecave' %}active{% endif %}" href="{{ path('notrecave.index') }}">Au sujet de notre cave</a>
+     {#     <a class="dropdown-item {% if menu_actif5 is defined and menu_actif5 == 'notrecave' %}active{% endif %}" href="{{ path('notrecave.index') }}">Au sujet de notre cave</a>
           <a class="dropdown-item {% if menu_actif6 is defined and menu_actif6 == 'fvitis' %}active{% endif %}" href="{{ path('fvitis.index') }}">Notre service f.Vitis</a>
           <a class="dropdown-item {% if menu_actif7 is defined and menu_actif7 == 'evitis' %}active{% endif %}" href="{{ path('evitis.index') }}">Notre service e.vitis</a>
           <a class="dropdown-item {% if menu_actif8 is defined and menu_actif8 == 'aw3' %}active{% endif %}" href="{{ path('aw3.index') }}">Notre service AW3</a>
@@ -55,22 +55,26 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link {% if menu_actif is defined and menu_actif == 'vindexeption' %}active{% endif %} "href="{{ path('vindexeption.index') }}">Nos vins d'exception</a>
+        <a class="nav-link {% if menu_actif is defined and menu_actif == 'vindexeption' %}active{% endif %} "href="{{ path('vindexeption.index') }}">{% trans %}Nos vins d'exception{% endtrans %}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link {% if menu_actif2 is defined and menu_actif2 == 'VinsPrimeurs' %}active{% endif %}" href="{{ path('vinsprimeurs.index') }}">Nos vins en Primeur</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link {% if menu_actif3 is defined and menu_actif3 == 'blog' %}active{% endif %}" href="{{ path('blog.index') }}">Le blog</a>
+        <a class="nav-link {% if menu_actif2 is defined and menu_actif2 == 'VinsPrimeurs' %}active{% endif %}" href="{{ path('vinsprimeurs.index') }}">{% trans %}Nos vins en Primeur{% endtrans %}</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link {% if menu_actif4 is defined and menu_actif4 == 'contact' %}active{% endif %}" href="{{ path('contact.index') }}">Contact</a>
+        <a class="nav-link {% if menu_actif3 is defined and menu_actif3 == 'blog' %}active{% endif %}" href="{{ path('blog.index') }}">{% trans %}Le blog{% endtrans %}</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link {% if menu_actif is defined and menu_actif == 'carteinteractive' %}active{% endif %} "href="{{ path('carteinteractive.index') }}">{% trans %}Carte interactive{% endtrans %}</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link {% if menu_actif4 is defined and menu_actif4 == 'contact' %}active{% endif %}" href="{{ path('contact.index') }}">{% trans %}Contact{% endtrans %}</a>
       </li>
     </ul>
 
-    <form class="form-inline my-2 my-lg-0">
+{#    <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-0" type="search" placeholder="Rechercher" aria-label="Search">
       <button class="btn btn-light my-2 my-sm-0" type="submit">
         <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -78,17 +82,37 @@
         <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
         </svg>
     </button>
-    </form>
-  <!--   se déconnecter bouton -->
+    </form> #}
+  <!--   se connecter bouton -->
+  {% if not app.user %}
+  <ul class="navbar-nav">
+    <li id="button-login" class="nav-item">
+      <a href="{{ path('login') }}" class="nav-link">{% trans %}Connexion{% endtrans %}</a>
+    </li>
+  </ul>
+  {% endif %}
+<!--   se déconnecter bouton -->
     {% if app.user %}
   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a href="{{ path('logout') }}" class="nav-link">Déconnexion</a>
+    <li id="button-logout" class="nav-item">
+      <a href="{{ path('logout') }}" class="nav-link">{% trans %}Déconnexion{% endtrans %}</a>
     </li>
   </ul>
 {% endif %}
   <!-- fin bouton se deconnecter -->
   
+  <!-- drapeaux -->
+  <ul class="navbar-nav ml-3 ">
+  {% for locale in locales %} {% if locale != app.request.locale %} {# si la langue n'est pas celle active #}
+    <li class="nav-item">
+      <a class="navbar-brand" href="{{ path('locales', {'locale': locale }) }}">
+      <img src="{{ asset('assets/img/'~locale~'.png') }}" class="flag" alt="{{ locale }}" style="width:25px;">
+      </a>
+    </li>{% endif %}
+  {% endfor %} 
+  </ul>
+  <!-- fin drapeaux -->
+
   </div>
 </nav>
 <!-- Navbar end -->

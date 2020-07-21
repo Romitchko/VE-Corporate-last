@@ -1,0 +1,11 @@
+<h1>{% trans %}Bonjour, vous devez confirmer votre adresse email.{% endtrans %}</h1>
+
+<p>
+    {% trans %}Cliquez sur le lien suivant pour confirmer votre adresse email.{% endtrans %} <br><br>
+    <a href="{{ signedUrl|raw }}">Confirmer mon email</a>.
+    {% trans %}Ce lien expire dans{% endtrans %} {{ expiresAt|date('g') }} heure(s).
+</p>
+
+<p>
+    {% trans %}A bientôt sur notre site Vitis Epicuria !{% endtrans %}
+</p>

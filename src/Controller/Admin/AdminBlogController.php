@@ -10,6 +10,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+
+ /**
+  * Requière ROLE_ADMIN pour *tous* les controllers methods dans cette class.
+  *
+  * @IsGranted("ROLE_ADMIN")
+  */
 class AdminBlogController extends AbstractController
 {
 
@@ -20,9 +27,10 @@ class AdminBlogController extends AbstractController
     private $repository;
 
     public function __construct(ArticlesRepository $repository, EntityManagerInterface $em)
-    {
-        $this->repository = $repository;
-        $this->em = $em;
+    { /* ArticlesRepository = conteneur qui stock tous les articles pour les afficher puis filtre avec méthode findAll */
+        /* EntityManager permet de persister et flush les articles */
+        $this->repository = $repository; /* initialisation de repository*/ 
+        $this->em = $em; /* initialisation de l'em */
     }
 
     /**
@@ -31,8 +39,8 @@ class AdminBlogController extends AbstractController
      */
     public function index2(): Response
     {
-        $articles = $this->repository->findAll();
-        return $this->render('pages/adminpages/index.html.twig', compact('articles'));
+        $articles = $this->repository->findAll(); /* repository execute methode findAll articles */
+        return $this->render('pages/adminpages/index.html.twig', compact('articles')); /* retourne page */
     }
 
     /**
@@ -41,19 +49,19 @@ class AdminBlogController extends AbstractController
      */
     public function new(Request $request)
     {
-        $articles = new Articles();
-        $form = $this->createForm(ArticleType::class, $articles);
-        $form->handleRequest($request);
+        $articles = new Articles(); /* créer article nouveau */
+        $form = $this->createForm(ArticleType::class, $articles); /* créer un form article */
+        $form->handleRequest($request); /* handlerequest */
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $this->em->persist($articles);
-            $this->em->flush();
-            $this->addFlash('success', 'Article créé avec succès.');
-            return $this->redirectToRoute('pages.adminpages.index');
+        if ($form->isSubmitted() && $form->isValid()) { /* si form soumis et valide */
+            $this->em->persist($articles); /* entitymanager persiste la donnée */
+            $this->em->flush(); /* entitymanager flush à la BDD */
+            $this->addFlash('success', 'Article créé avec succès.'); /* message à l'user */
+            return $this->redirectToRoute('pages.adminpages.index'); /* redirection user */
         }
-        return $this->render('pages/adminpages/new.html.twig', [
-            'articles' => $articles,
-            'form' => $form->createView()
+        return $this->render('pages/adminpages/new.html.twig', [ /* rendre vue new article */
+            'articles' => $articles, 
+            'form' => $form->createView() /* créer la vue depuis le form */
         ]);
     }
 
@@ -63,20 +71,20 @@ class AdminBlogController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function edit(Articles $articles, Request $request)
+    public function edit(Articles $articles, Request $request) /* récuperation article */
     {
-        $form = $this->createForm(ArticleType::class, $articles);
-        $form->handleRequest($request);
+        $form = $this->createForm(ArticleType::class, $articles); /* creation du form depuis ArticleType */
+        $form->handleRequest($request); /* handlerequest form */
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $this->em->flush();
-            $this->addFlash('success', 'Article modifié avec succès.');
-            return $this->redirectToRoute('pages.adminpages.index');
+        if ($form->isSubmitted() && $form->isValid()) { /* si form soumis et valide */
+            $this->em->flush(); /* entitymanager flush a la BDD */
+            $this->addFlash('success', 'Article modifié avec succès.'); /* message succès user */
+            return $this->redirectToRoute('pages.adminpages.index'); /* redirect user */
         }
 
-        return $this->render('pages/adminpages/edit.html.twig', [
+        return $this->render('pages/adminpages/edit.html.twig', [ /* rendre vue edit */
             'articles' => $articles,
-            'form' => $form->createView()
+            'form' => $form->createView() /* créer vue form */
         ]);
     }
 
@@ -85,14 +93,15 @@ class AdminBlogController extends AbstractController
      * @param Articles $articles
      * @return void
      */
-    public function delete(Articles $articles, Request $request)
+    public function delete(Articles $articles, Request $request) /* fonction delete article */
     {
-        if ($this->isCsrfTokenValid('delete' . $articles->getId(), $request->get('_token'))) {
-            $this->em->remove($articles);
-            $this->em->flush();
-            $this->addFlash('success', 'Article supprimé avec succès.');
+        if ($this->isCsrfTokenValid('delete' . $articles->getId(), $request->get('_token'))) { 
+            /* si TOKEN delete est valide, recupere id article, recupere le token */
+            $this->em->remove($articles); /* entitymanager methode remove */
+            $this->em->flush(); /* entitymanager flush BDD */
+            $this->addFlash('success', 'Article supprimé avec succès.'); /*message user succes */
         }
-        return $this->redirectToRoute('pages.adminpages.index');
+        return $this->redirectToRoute('pages.adminpages.index'); /* redirection user */
     }
 
 

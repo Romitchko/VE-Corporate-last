@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="EPB3__G" resname="Nos services exclusifs">
+        <source>Nos services exclusifs</source>
+        <target>Our exclusives services</target>
+      </trans-unit>
+      <trans-unit id="GFZEdkX" resname="Nos vins d'exception">
+        <source>Nos vins d'exception</source>
+        <target>Our exeptions wines</target>
+      </trans-unit>
+      <trans-unit id="3I0b6xI" resname="Nos vins en Primeur">
+        <source>Nos vins en Primeur</source>
+        <target>Our wines Primeur</target>
+      </trans-unit>
+      <trans-unit id="agWjrku" resname="Le blog">
+        <source>Le blog</source>
+        <target>Blog</target>
+      </trans-unit>
+      <trans-unit id="OPr187z" resname="Carte interactive">
+        <source>Carte interactive</source>
+        <target>Interactive Map</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="YdaVBBA" resname="Connexion">
+        <source>Connexion</source>
+        <target>Log in</target>
+      </trans-unit>
+      <trans-unit id="_1_eksG" resname="Déconnexion">
+        <source>Déconnexion</source>
+        <target>Log out</target>
+      </trans-unit>
+      <trans-unit id="OnZq7bJ" resname="Bienvenue chez Vitis Epicuria">
+        <source>Bienvenue chez Vitis Epicuria</source>
+        <target>Welcome to Vitis Epicuria</target>
+      </trans-unit>
+      <trans-unit id="IFOfyp1" resname="Nos derniers articles">
+        <source>Nos derniers articles</source>
+        <target>Our latest articles</target>
+      </trans-unit>
+      <trans-unit id="sdgsbjJ" resname="Carte des régions de France">
+        <source>Carte des régions de France</source>
+        <target>Map of the regions of France</target>
+      </trans-unit>
+      <trans-unit id="H.LXz9k" resname="Choisissez une région de France pour être redirigé vers nos produits de cette région.">
+        <source>Choisissez une région de France pour être redirigé vers nos produits de cette région.</source>
+        <target>Choose a region of France to be redirected to our products of this region.</target>
+      </trans-unit>
+      <trans-unit id="XH7uwWV" resname="Suivez-nous sur les réseaux">
+        <source>Suivez-nous sur les réseaux</source>
+        <target>Follow us on the networks</target>
+      </trans-unit>
+      <trans-unit id="aXgBgc_" resname="Vitis Epicuria, Maison de Négoce Spécialiste Vins Fins et Spiritueux à Bordeaux depuis 2004.">
+        <source>Vitis Epicuria, Maison de Négoce Spécialiste Vins Fins et Spiritueux à Bordeaux depuis 2004.</source>
+        <target>Vitis Epicuria, Wine and Spirits Specialist Trading House since 2004.</target>
+      </trans-unit>
+      <trans-unit id="p_APDH7" resname="Depuis 2004, Vitis Epicuria, implanté au cœur du Bordelais, vous propose de très nombreuses références de grands crus viticoles. Outre des vins de renom en provenance de France et des grandes régions viticoles mondiales, nous vous proposons une conciergerie privée : hébergement de bouteilles, placement de grands crus, optimisations de caves, dépôt-vente… N’hésitez pas à nous contacter pour des demandes spécifiques. La satisfaction de nos clients découle de la sélection et de la fidélisation des meilleurs viticulteurs.">
+        <source>Depuis 2004, Vitis Epicuria, implanté au cœur du Bordelais, vous propose de très nombreuses références de grands crus viticoles. Outre des vins de renom en provenance de France et des grandes régions viticoles mondiales, nous vous proposons une conciergerie privée : hébergement de bouteilles, placement de grands crus, optimisations de caves, dépôt-vente… N’hésitez pas à nous contacter pour des demandes spécifiques. La satisfaction de nos clients découle de la sélection et de la fidélisation des meilleurs viticulteurs.</source>
+        <target>Since 2004, Vitis Epicuria, located in the heart of Bordeaux, has been offering you a large number of references of great wine. In addition to renowned wines from France and the world’s major wine-growing regions, we offer you a private concierge service: bottle accommodation, placement of great wines, cellar optimisations, depot-sales… Do not hesitate to contact us for specific requests. The satisfaction of our customers comes from the selection and retention of the best winegrowers.</target>
+      </trans-unit>
+      <trans-unit id="Dbj6.hn" resname="Depuis 2004, Vitis Epicuria, implanté au cœur du Bordelais, &lt;/br&gt;vous propose&#10;de très nombreuses références de grands crus viticoles.&lt;/br&gt;&#10;Outre des vins de renom en provenance de France et des grandes régions viticoles mondiales,&lt;/br&gt;&#10;nous vous proposons une conciergerie privée :&lt;/br&gt; hébergement de bouteilles, placement de grands crus, optimisations de caves, dépôt-vente…&lt;/br&gt;&#10;N’hésitez pas à nous contacter pour des demandes spécifiques.&lt;/br&gt;&#10;La satisfaction de nos clients découle de la sélection et de la fidélisation des meilleurs viticulteurs.">
+        <source>Depuis 2004, Vitis Epicuria, implanté au cœur du Bordelais, &lt;/br&gt;vous propose
+de très nombreuses références de grands crus viticoles.&lt;/br&gt;
+Outre des vins de renom en provenance de France et des grandes régions viticoles mondiales,&lt;/br&gt;
+nous vous proposons une conciergerie privée :&lt;/br&gt; hébergement de bouteilles, placement de grands crus, optimisations de caves, dépôt-vente…&lt;/br&gt;
+N’hésitez pas à nous contacter pour des demandes spécifiques.&lt;/br&gt;
+La satisfaction de nos clients découle de la sélection et de la fidélisation des meilleurs viticulteurs.</source>
+        <target><![CDATA[Since 2004, Vitis Epicuria, located in the heart of Bordeaux, </br>has been offering you a large number of references of great wine.</br>
+In addition to renowned wines from France and the world’s major wine-growing regions,</br>
+we offer you a private concierge service :</br> bottle accommodation, placement of great wines, cellar optimisations, depot-sales… </br>
+Do not hesitate to contact us for specific requests. </br>
+The satisfaction of our customers comes from the selection and retention of the best winegrowers.]]></target>
+      </trans-unit>
+      <trans-unit id="zNAu.Bf" resname="Retrouvez tous nos vins d’exception ici :">
+        <source>Retrouvez tous nos vins d’exception ici :</source>
+        <target>Find all of our exceptional wines here:</target>
+      </trans-unit>
+      <trans-unit id="iz8xKz2" resname="LIVRAISON OPTIMALE">
+        <source>LIVRAISON OPTIMALE</source>
+        <target>OPTIMAL DELIVERY</target>
+      </trans-unit>
+      <trans-unit id="NTtGtHF" resname="Nous avons sélectionnées les meilleurs transporteurs pour des livraisons optimisées. &#10;      * Livraison offerte en France dès 300€ TTC d’achat hors primeurs.">
+        <source>Nous avons sélectionnées les meilleurs transporteurs pour des livraisons optimisées. 
+      * Livraison offerte en France dès 300€ TTC d’achat hors primeurs.</source>
+        <target>Nous avons sélectionnées les meilleurs transporteurs pour des livraisons optimisées. 
+      * Livraison offerte en France dès 300€ TTC d’achat hors primeurs.</target>
+      </trans-unit>
+      <trans-unit id="KLC.hRx" resname="SERVICES PERSONNALISÉS">
+        <source>SERVICES PERSONNALISÉS</source>
+        <target>PERSONALIZED SERVICES</target>
+      </trans-unit>
+      <trans-unit id="hc7KYoH" resname="Vous recherchez un vin en particulier, un millésime? Appelez-nous !">
+        <source>Vous recherchez un vin en particulier, un millésime? Appelez-nous !</source>
+        <target>Are you looking for a particular wine, a vintage? Call us !</target>
+      </trans-unit>
+      <trans-unit id="giSb4uk" resname="PAIEMENT SÉCURISÉ">
+        <source>PAIEMENT SÉCURISÉ</source>
+        <target>SECURE PAYMENT</target>
+      </trans-unit>
+      <trans-unit id="JSeEHIM" resname="Nos systèmes de paiement par carte bancaire sont sécurisés.">
+        <source>Nos systèmes de paiement par carte bancaire sont sécurisés.</source>
+        <target>Our credit card payment systems are secure.</target>
+      </trans-unit>
+      <trans-unit id="3DTEBWm" resname="Retrouvez tous nos vins Primeurs ici :">
+        <source>Retrouvez tous nos vins Primeurs ici :</source>
+        <target>Find all our Primeur wines here:</target>
+      </trans-unit>
+      <trans-unit id="_Xq5SeV" resname="QU’EST-CE Q’UN PRIMEUR ?">
+        <source>QU’EST-CE Q’UN PRIMEUR ?</source>
+        <target>WHAT IS A PRIMEUR ?</target>
+      </trans-unit>
+      <trans-unit id="1W_tsxy" resname="Un vin primeur est un vin jeune destiné à être consommé dans les mois suivant la récolte. Par exemple, le beaujolais primeur ou « beaujolais nouveau » peut être bu à partir de la fin du mois de novembre. Si cette définition est valable dans toutes les régions viticoles françaises, à Bordeaux l’expression « vins primeurs » revêt une autre acception. En effet, les grands crus classés et assimilés (5% à 10% de la production bordelaise) sont mis en vente alors que les vins ne sont pas encore « définitifs » ; ils doivent encore être élevés 18 mois en barriques dans les chais des châteaux. Cette pratique, qui existe à Bordeaux depuis plus de deux siècles, s’appelle la « vente en primeur ». Elle s’effectue du château vers le négociant, qui revendra ensuite aux particuliers ou à d’autres distributeurs comme les sites Internet marchands.&lt;/br&gt;&#10;&#10;Si les châteaux s’assurent par ce biais une rentrée immédiate de trésorerie, les acheteurs peuvent aussi espérer un avantage : obtenir une décote par rapport au prix final du vin lorsqu’il sera mis sur le marché en bouteilles deux ans plus tard. Cette décote est considérée comme intéressante si elle dépasse -30%. C’était souvent le cas, voire bien plus, au début des années 1980, mais ce bénéfice s’est réduit au fil des millésimes. Tandis que certains acheteurs se procurent les vins pour leur cave personnelle, de nombreux autres spéculent en revendant les bouteilles aux enchères, une tendance en forte hausse depuis le mythique 2000.&lt;/br&gt;&#10;&#10;Compte tenu de ces enjeux, on comprend l’immense intérêt que suscitent les fameuses dégustations « en primeur » opérées sur place à Bordeaux par de nombreux critiques du monde entier, car leurs notes seront décisives pour le prix de chaque bouteille.&lt;/br&gt;&#10;&#10;Au-delà du Bordelais, certains grands domaines de Bourgogne et du Rhône proposent eux aussi leurs vins en primeurs depuis quelques années.">
+        <source>Un vin primeur est un vin jeune destiné à être consommé dans les mois suivant la récolte. Par exemple, le beaujolais primeur ou « beaujolais nouveau » peut être bu à partir de la fin du mois de novembre. Si cette définition est valable dans toutes les régions viticoles françaises, à Bordeaux l’expression « vins primeurs » revêt une autre acception. En effet, les grands crus classés et assimilés (5% à 10% de la production bordelaise) sont mis en vente alors que les vins ne sont pas encore « définitifs » ; ils doivent encore être élevés 18 mois en barriques dans les chais des châteaux. Cette pratique, qui existe à Bordeaux depuis plus de deux siècles, s’appelle la « vente en primeur ». Elle s’effectue du château vers le négociant, qui revendra ensuite aux particuliers ou à d’autres distributeurs comme les sites Internet marchands.&lt;/br&gt;
+
+Si les châteaux s’assurent par ce biais une rentrée immédiate de trésorerie, les acheteurs peuvent aussi espérer un avantage : obtenir une décote par rapport au prix final du vin lorsqu’il sera mis sur le marché en bouteilles deux ans plus tard. Cette décote est considérée comme intéressante si elle dépasse -30%. C’était souvent le cas, voire bien plus, au début des années 1980, mais ce bénéfice s’est réduit au fil des millésimes. Tandis que certains acheteurs se procurent les vins pour leur cave personnelle, de nombreux autres spéculent en revendant les bouteilles aux enchères, une tendance en forte hausse depuis le mythique 2000.&lt;/br&gt;
+
+Compte tenu de ces enjeux, on comprend l’immense intérêt que suscitent les fameuses dégustations « en primeur » opérées sur place à Bordeaux par de nombreux critiques du monde entier, car leurs notes seront décisives pour le prix de chaque bouteille.&lt;/br&gt;
+
+Au-delà du Bordelais, certains grands domaines de Bourgogne et du Rhône proposent eux aussi leurs vins en primeurs depuis quelques années.</source>
+        <target>A primeur wine is a young wine intended to be drunk in the months following the harvest. For example, Beaujolais Nouveau or « Beaujolais Nouveau » can be drunk from the end of November. While this definition is valid in all French wine-growing regions, in Bordeaux the expression « primeur wines » has a different meaning. Indeed, the great classified growths and assimilated (five to ten percent of Bordeaux production) are put on sale while the wines are not yet « final »; they must still be aged for 18 months in barrels in the cellars of the châteaux.
+
+This practice, which has existed in Bordeaux for more than two centuries, is called « primeur sales ». It is carried out from the castle to the merchant, who will then sell it to individuals or other distributors such as merchant websites.
+
+If the châteaux ensure an immediate cash inflow in this way, buyers can also expect an advantage: to obtain a discount compared to the final price of the wine when it is put on the market in bottles two years later. This discount is considered interesting if it exceeds -30%. This was often the case, or even much more, in the early 1980s, but this benefit has declined with each vintage.
+
+While some buyers buy the wines for their personal cellars, many others speculate by selling the bottles at auction, a trend that has been rising sharply since the mythical 2000.
+
+Given these challenges, we can understand the immense interest aroused by the famous « en primeur » tastings held in Bordeaux by many critics from all over the world, because their ratings will be decisive for the price of each bottle.
+
+Beyond Bordeaux, some of the major estates in Burgundy and the Rhône have also been offering their wines as Futures in recent years.</target>
+      </trans-unit>
+      <trans-unit id="8jX8VhZ" resname="Créer le">
+        <source>Créer le</source>
+        <target>Créated on </target>
+      </trans-unit>
+      <trans-unit id="gMm96AP" resname="Bonjour, vous devez confirmer votre adresse email.">
+        <source>Bonjour, vous devez confirmer votre adresse email.</source>
+        <target>Hello, you need to confirm your email address.</target>
+      </trans-unit>
+      <trans-unit id="y71IPZF" resname="Cliquez sur le lien suivant pour confirmer votre adresse email.">
+        <source>Cliquez sur le lien suivant pour confirmer votre adresse email.</source>
+        <target>Click on the following link to confirm your email address.</target>
+      </trans-unit>
+      <trans-unit id="WvYM7DZ" resname="Ce lien expire dans">
+        <source>Ce lien expire dans</source>
+        <target>This link expires in</target>
+      </trans-unit>
+      <trans-unit id="6lDiz21" resname="A bientôt sur notre site Vitis Epicuria !">
+        <source>A bientôt sur notre site Vitis Epicuria !</source>
+        <target>See you soon on our Vitis Epicuria site!</target>
+      </trans-unit>
+      <trans-unit id="piivmAm" resname="Créer un compte">
+        <source>Créer un compte</source>
+        <target>Create an account</target>
+      </trans-unit>
+      <trans-unit id="xDb5n.5" resname="S'enregistrer">
+        <source>S'enregistrer</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="PCX0_17" resname="S'inscrire">
+        <source>S'inscrire</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="hRdkX4h" resname="Nom d'utilisateur">
+        <source>Nom d'utilisateur</source>
+        <target>Username</target>
+      </trans-unit>
+      <trans-unit id=".5yLjAZ" resname="Mot de passe">
+        <source>Mot de passe</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="CsPSyzA" resname="Se connecter">
+        <source>Se connecter</source>
+        <target>Log in</target>
+      </trans-unit>
+      <trans-unit id="xk2Xg9_" resname="Pas encore inscrit ?">
+        <source>Pas encore inscrit ?</source>
+        <target>Not registered ?</target>
+      </trans-unit>
+      <trans-unit id="uCxmycl" resname="Un vin primeur est un vin jeune destiné à être consommé dans les mois suivant la récolte. Par exemple, le beaujolais primeur ou « beaujolais nouveau » peut être bu à partir de la fin du mois de novembre. Si cette définition est valable dans toutes les régions viticoles françaises, à Bordeaux l’expression « vins primeurs » revêt une autre acception. En effet, les grands crus classés et assimilés (cinq à dix pourcent de la production bordelaise) sont mis en vente alors que les vins ne sont pas encore « définitifs » ; ils doivent encore être élevés 18 mois en barriques dans les chais des châteaux. Cette pratique, qui existe à Bordeaux depuis plus de deux siècles, s’appelle la « vente en primeur ». Elle s’effectue du château vers le négociant, qui revendra ensuite aux particuliers ou à d’autres distributeurs comme les sites Internet marchands.&lt;/br&gt;&#10;&#10;Si les châteaux s’assurent par ce biais une rentrée immédiate de trésorerie, les acheteurs peuvent aussi espérer un avantage : obtenir une décote par rapport au prix final du vin lorsqu’il sera mis sur le marché en bouteilles deux ans plus tard. Cette décote est considérée comme intéressante si elle dépasse -30%. C’était souvent le cas, voire bien plus, au début des années 1980, mais ce bénéfice s’est réduit au fil des millésimes. Tandis que certains acheteurs se procurent les vins pour leur cave personnelle, de nombreux autres spéculent en revendant les bouteilles aux enchères, une tendance en forte hausse depuis le mythique 2000.&lt;/br&gt;&#10;&#10;Compte tenu de ces enjeux, on comprend l’immense intérêt que suscitent les fameuses dégustations « en primeur » opérées sur place à Bordeaux par de nombreux critiques du monde entier, car leurs notes seront décisives pour le prix de chaque bouteille.&lt;/br&gt;&#10;&#10;Au-delà du Bordelais, certains grands domaines de Bourgogne et du Rhône proposent eux aussi leurs vins en primeurs depuis quelques années.">
+        <source>Un vin primeur est un vin jeune destiné à être consommé dans les mois suivant la récolte. Par exemple, le beaujolais primeur ou « beaujolais nouveau » peut être bu à partir de la fin du mois de novembre. Si cette définition est valable dans toutes les régions viticoles françaises, à Bordeaux l’expression « vins primeurs » revêt une autre acception. En effet, les grands crus classés et assimilés (cinq à dix pourcent de la production bordelaise) sont mis en vente alors que les vins ne sont pas encore « définitifs » ; ils doivent encore être élevés 18 mois en barriques dans les chais des châteaux. Cette pratique, qui existe à Bordeaux depuis plus de deux siècles, s’appelle la « vente en primeur ». Elle s’effectue du château vers le négociant, qui revendra ensuite aux particuliers ou à d’autres distributeurs comme les sites Internet marchands.&lt;/br&gt;
+
+Si les châteaux s’assurent par ce biais une rentrée immédiate de trésorerie, les acheteurs peuvent aussi espérer un avantage : obtenir une décote par rapport au prix final du vin lorsqu’il sera mis sur le marché en bouteilles deux ans plus tard. Cette décote est considérée comme intéressante si elle dépasse -30%. C’était souvent le cas, voire bien plus, au début des années 1980, mais ce bénéfice s’est réduit au fil des millésimes. Tandis que certains acheteurs se procurent les vins pour leur cave personnelle, de nombreux autres spéculent en revendant les bouteilles aux enchères, une tendance en forte hausse depuis le mythique 2000.&lt;/br&gt;
+
+Compte tenu de ces enjeux, on comprend l’immense intérêt que suscitent les fameuses dégustations « en primeur » opérées sur place à Bordeaux par de nombreux critiques du monde entier, car leurs notes seront décisives pour le prix de chaque bouteille.&lt;/br&gt;
+
+Au-delà du Bordelais, certains grands domaines de Bourgogne et du Rhône proposent eux aussi leurs vins en primeurs depuis quelques années.</source>
+        <target>A primeur wine is a young wine intended to be drunk in the months following the harvest. For example, Beaujolais Nouveau or « Beaujolais Nouveau » can be drunk from the end of November. While this definition is valid in all French wine-growing regions, in Bordeaux the expression « primeur wines » has a different meaning. Indeed, the great classified growths and assimilated (five to ten percent of Bordeaux production) are put on sale while the wines are not yet « final »; they must still be aged for 18 months in barrels in the cellars of the châteaux.
+
+This practice, which has existed in Bordeaux for more than two centuries, is called « primeur sales ». It is carried out from the castle to the merchant, who will then sell it to individuals or other distributors such as merchant websites.
+
+If the châteaux ensure an immediate cash inflow in this way, buyers can also expect an advantage: to obtain a discount compared to the final price of the wine when it is put on the market in bottles two years later. This discount is considered interesting if it exceeds -30%. This was often the case, or even much more, in the early 1980s, but this benefit has declined with each vintage.
+
+While some buyers buy the wines for their personal cellars, many others speculate by selling the bottles at auction, a trend that has been rising sharply since the mythical 2000.
+
+Given these challenges, we can understand the immense interest aroused by the famous « en primeur » tastings held in Bordeaux by many critics from all over the world, because their ratings will be decisive for the price of each bottle.
+
+Beyond Bordeaux, some of the major estates in Burgundy and the Rhône have also been offering their wines as Futures in recent years.</target>
+      </trans-unit>
+      <trans-unit id="OsexiCj" resname="Une question ? Contactez-nous !">
+        <source>Une question ? Contactez-nous !</source>
+        <target>A question ? Contact us !</target>
+      </trans-unit>
+      <trans-unit id="6gatMo0" resname="Une personne de chez Vitis Epicuria vous répondra rapidement du lundi au vendredi de 9h00 à 17h00.">
+        <source>Une personne de chez Vitis Epicuria vous répondra rapidement du lundi au vendredi de 9h00 à 17h00.</source>
+        <target>A person from Vitis Epicuria will respond quickly from Monday to Friday from 9:00 a.m. to 5:00 p.m.</target>
+      </trans-unit>
+      <trans-unit id="ANY.1wI" resname="Erreur lors de l'envoi du message.">
+        <source>Erreur lors de l'envoi du message.</source>
+        <target>An error happened while sending the message.</target>
+      </trans-unit>
+      <trans-unit id="eQdSCfK" resname="Envoyer">
+        <source>Envoyer</source>
+        <target>Send</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

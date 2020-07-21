@@ -16,17 +16,19 @@ class UserFixtures extends Fixture
     private $encoder;
 
     public function __construct(UserPasswordEncoderInterface $encoder)
-    {
+    { /* création encoder via UserPasswordEncoderInterface et initialisation */
         $this->encoder = $encoder;
     }
 
 
 
     public function load(ObjectManager $manager)
-    {
+    {   /* creation new user */
         $user = new User();
         $user->setUsername('AdminVitis');
+        $user->setEmail('contact@vitis-epicuria.com');
         $user->setPassword($this->encoder->encodePassword($user, 'Vitis80'));
+        $user->setRoles(['ROLE_ADMIN']);
         $manager->persist($user);
         $manager->flush();
     }

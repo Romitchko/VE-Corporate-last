@@ -5,12 +5,16 @@ namespace App\Entity;
 use Serializable;
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\UserRepository;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @UniqueEntity(fields={"username"}, message="There is already an account with this username")
  */
-class User Implements UserInterface,\Serializable
+class User Implements UserInterface,\Serializable 
+/* Pour que l’utilisateur soit sauvegardé au niveau de la session, 
+le User doit implémenter l’interface avec « \Serializable ». */
 {
     /**
      * @ORM\Id()
@@ -28,6 +32,49 @@ class User Implements UserInterface,\Serializable
      * @ORM\Column(type="string", length=255)
      */
     private $password;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     * Assert\NotBlank()
+     * Assert\Email()
+     */
+    private $email;
+
+
+    
+    /**
+     * @ORM\Column(type="json")
+     */
+    private $roles = [];
+
+    // ...
+    public function getRoles(): array
+    {
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);
+    }
+
+    /**
+     * Set the value of roles
+     *
+     * @return  self
+     */ 
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+
+        return $this;
+    }
+    
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isVerified = false;
+
 
     public function getId(): ?int
     {
@@ -58,21 +105,20 @@ class User Implements UserInterface,\Serializable
         return $this;
     }
 
-
-    /**
-     * Returns the roles granted to the user.
-     * 
-     *  public function getRoles() 
-     *      {
-     *          return array('ROLE_USER');
-     *      }
-     * 
-     * @return (Role|string|null[] The user roles)
-     */
-    public function getRoles()
+    public function getEmail(): ?string
     {
-        return ['ROLE_ADMIN'];
+        return $this->email;
     }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+
+    
 
 
     /**
@@ -102,7 +148,8 @@ class User Implements UserInterface,\Serializable
      * @return string the string representation of the object or null
      * @since 5.1.0
      */
-    public function serialize()
+    public function serialize() /* methode pour sauvegarder le user dans la session 
+    et transforme l'objet en chaine */
     {
         return serialize([
             $this->id,
@@ -113,18 +160,38 @@ class User Implements UserInterface,\Serializable
 
     /**
      * Construct the object 
-     * @param string $serialized <p>
+     * @param string $serialized <p> 
      * The string representation of the object.
      * <p>
      * @return void
      * @since 5.1.0
      */
-    public function unserialize($serialized)
+    public function unserialize($serialized) 
+    /* inverse de serialize, convertit la chaine en objet */
+    /* passe en @param les informations qui ont pu être serialisés */
     {
-        list (
+        list ( 
             $this->id,
             $this->username,
             $this->password
         ) = unserialize($serialized, ['allowed_classes' => false]);
+        /* allowed classes permet de ne pas instancier les classes si elles dans serialized */
     }
+
+    public function isVerified(): bool
+    {
+        return $this->isVerified;
+    }
+
+    public function setIsVerified(bool $isVerified): self
+    {
+        $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+
+   
+
+    
 }

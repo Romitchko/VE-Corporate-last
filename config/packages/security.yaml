@@ -1,10 +1,15 @@
 security:
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    role_hierarchy:
+        ROLE_ADMIN: [ROLE_ADMIN]
+        ROLE_USER: [ROLE_USER]
+
     providers:
         from_database:
-            entity:
+            entity:    
                 class: App\Entity\User
                 property: username
+                
 
     firewalls:
         dev:
@@ -17,11 +22,12 @@ security:
             # http_basic: true
 
             logout:
-                path: /logout
+                path: /logout  # définition du logout chemin
                 target: /
 
-            form_login:
-                check_path: login
+            form_login: 
+                check_path: login # check login permet Symfony detection 
+                # si user va sur /login en POST c'est qu'il veut s'authentifier grace au formulaire
 
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
@@ -32,10 +38,12 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        - { path: ^/admin, roles: ROLE_ADMIN }
+        - { path: ^/admin, roles: ROLE_ADMIN } # contrôle de l'accès du chemin admin, requiere ROLE_ADMIN
         # - { path: ^/profile, roles: ROLE_USER }
+        - { path: ^/registration, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
 
     encoders:
         App\Entity\User:
-            algorithm: bcrypt
-            cost: 12
+            algorithm: bcrypt   # encode le password avec bcrypt
+            cost: 12            # valeur de l'encodage 12

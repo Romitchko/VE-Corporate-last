@@ -14,7 +14,7 @@
 
 
 <div class="container mt-4">
-    <h2 class="container mb-4 text-center">Nos derniers articles</h2>
+    <h2 class="container mb-4 text-center">{% trans %}Nos derniers articles{% endtrans %}</h2>
     <div class="row flex">
         {% for articles in Articles %}
             <div class="col-md-6">
@@ -28,4 +28,5 @@
 
 </div>
     
+{% include 'pages/footer.html.twig' %}
 {% endblock %}

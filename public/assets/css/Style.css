@@ -1,9 +1,13 @@
-@media screen and (max-width:1024px){
+@media screen and (max-width:760px){
     #imageaccueilemotion, #coverhome{
         display:none;
-    }}
+    }
+}
 
-
+    body, h1, h2, h3, h4, h5 {
+        /*  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+          font-family: 'Crimson-Text';
+      }
 /* home css */
 #coverhome {
     background-image: url('../img/Vitis_fond1024.png');
@@ -38,4 +42,115 @@ ul {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+}
+
+#datearticle {
+    font-size: 1em;
+    font-style: italic;
+}
+
+#titrearticle, .card-header, a {
+    color: #d9cfa6;
+}
+
+a:hover {
+    color: #89204a;
+}
+
+ul {
+    font-size: 1.2em;
+}
+
+th {
+    font-size: 1.2em;
+    color: #d9cfa6;
+    text-transform: uppercase;
+}
+
+/* CARTE INTERACTIVE */
+.map {
+    overflow: hidden;
+}
+
+.map__image {
+    width: 50%;
+    float: left;
+}
+
+/* couleur de la map et stroke pour contour des regions */
+.map__image path{
+    fill: #d9cfa6;
+    stroke: rgb(57, 57, 57);
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+/* au survol d'un enfant avec la class is-active de map__image, change couleur */
+.map__image .is-active path{
+    fill: #89204a;
+    transform: scale(1.03);
+}
+
+.map__list{
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.map__list a{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* au survol d'un enfant avec la class is-active de map__list, change couleur*/
+.map__list a.is-active{
+    color: #89204a; 
+    font-weight: bold;
+}
+
+
+
+#p_carte {
+    font-size: 1.2em;
+}
+/* FIN CARTE INTERACTIVE */
+
+.card-text:last-child {
+    font-size: 1.1em;
+}
+
+#text-home {
+    font-size: 1.2em;
+}
+
+#home-lead-text-center {
+    color: #d9cfa6;
+    font-size: 1.7em;
+    font-style: italic;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #d9cfa6;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ffffff;
+}
+
+#button-login {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #d9cfa6;
+}
+
+#button-logout {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #d9cfa6;
+}
+
+img.flag:hover {
+    content: url('../img/en.png');
 }

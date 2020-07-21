@@ -4,12 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Articles;
 use App\Repository\ArticlesRepository;
+use App\Notification\ContactNotification;
 use Doctrine\ORM\EntityManagerInterface; 
 use Knp\Component\Pager\PaginatorInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 
 class BlogController extends AbstractController
 {

@@ -3,10 +3,17 @@
     {% if articles.filename %}
         <img src="assets\images\articles\{{ articles.filename }}" alt="card-img-top" style="width: 100%; height: auto;">
     {% endif %}
-    <h5 class="card-header">
+    <h5 id="titrearticle" class="card-header">
              <a href="{{ path('blog.show', {id: articles.id, slug: articles.slug}) }}">{{ articles.title }}</a>
             </h5>
+        <div id="datearticle" class="col-md-12">
+                    <p>{% trans %}Créer le {% endtrans %}{{ articles.updated_at|date('d-m-Y') }}</p>
+        </div>
+
         <div class="card-body">
             <p class="card-text">{{ articles.description | nl2br }}</p>
         </div>
+        
+        
+                
     </div> 

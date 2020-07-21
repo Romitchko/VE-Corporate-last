@@ -4,9 +4,22 @@
 
 {% block body %}
     <div class="jumbotron txt-center text-center">
-        <h1>Une question ? Contactez-nous !</h1> 
-        <p>Une personne de chez Vitis Epicuria vous répondra rapidement du lundi au vendredi de 9h00 à 17h00.</p>
+        <h1>{% trans %}Une question ? Contactez-nous !{% endtrans %}</h1> 
+        <p>{% trans %}Une personne de chez Vitis Epicuria vous répondra rapidement du lundi au vendredi de 9h00 à 17h00.{% endtrans %}</p>
     </div>
+
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    {% if not form.vars.valid %}
+        <div class="alert alert-danger">
+            {% trans %}Erreur lors de l'envoi du message.{% endtrans %}
+        </div>
+    {% endif %}
+
     <section id="covercontact" class="min-vh-80">
     <div id="cover-caption">
     <div id="contactForm" class="col-md-12 mt-4">
@@ -21,9 +34,10 @@
             </div>
             {{ form_rest(form) }}
             <div class="form-group">
-                <button class="btn btn-primary">Envoyer</button>
+                <button class="btn btn-primary">{% trans %}Envoyer{% endtrans %}</button>
             </div>
         {{ form_end(form) }}
     </div></br>
+    </div>
     {% include 'pages/footer.html.twig' %}
 {% endblock %}

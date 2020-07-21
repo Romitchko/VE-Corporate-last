@@ -10,8 +10,8 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ArticleType extends AbstractType
 {
-    public function buildForm(FormBuilderInterface $builder, array $options)
-    {
+    public function buildForm(FormBuilderInterface $builder, array $options) 
+    { /* Construit le champ de saisie et lie le model à la vue */
         $builder
             ->add('title')
             ->add('description')

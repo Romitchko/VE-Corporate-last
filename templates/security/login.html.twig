@@ -4,23 +4,31 @@
 
 {% block body %}
     <div class="container mt-4">
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
 
     {% if error %}
         <div class="alert alert-danger">
-        {{ error.messageKey | trans(error.messagedata, 'security') }}
+        {{ error.messageKey | trans(error.messagedata, 'security') }} 
         </div>
     {% endif %} 
+{# messageKey donne le type d'erreur et trans pour le composant de traduction qui traduit l'erreur #}
 
     <form action="{{ path('login') }}" method="post">
         <div class="form-group">
-            <label for="username">Nom d'utilisateur</label>
+            <label for="username">{% trans %}Nom d'utilisateur{% endtrans %}</label>
             <input type="text" id="username" name="_username" class="form-control"  value="{{ last_username }}">
         </div>
         <div class="form-group">
-            <label for="password">Mot de passe</label>
+            <label for="password">{% trans %}Mot de passe{% endtrans %}</label>
             <input type="password" id="password" name="_password" class="form-control"  autocomplete="off">
         </div>
-        <button type="submit" class="btn btn-primary">Se connecter</button>
+        <button type="submit" class="btn btn-primary">{% trans %}Se connecter{% endtrans %}</button></br>
+        </br>
+        <a href="{{ ('register') }}" class="senregistrer">{% trans %}Pas encore inscrit ?{% endtrans %}</a>
     </form>
 
     </div>

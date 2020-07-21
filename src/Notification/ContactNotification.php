@@ -4,7 +4,6 @@ namespace App\Notification;
 use Swift_Message;
 use Twig\Environment;
 use App\Entity\Contact;
-use App\Notification\ContactNotification;
 
  class ContactNotification {
     /**

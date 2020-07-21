@@ -25,8 +25,9 @@
         <tbody>
         {% for article in articles %}
          <tr>
-          <td>{{ article.title }}</td>
+          <td style="font-size: 1.2em;">{{ article.title }}</td>
            <td>
+        {% if is_granted('ROLE_ADMIN') %}
             <a href="{{ path('pages.adminpages.edit', {id: article.id}) }}" class="btn btn-success">Editer</a>
             <form method="POST" action="{{ path('pages.adminpages.delete', {id: article.id}) }}" style="display: inline-block" 
             onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cet article ?')">
@@ -34,15 +35,18 @@
                 <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ article.id) }}">
                 <button class="btn btn-danger">Supprimer</button>
             </form> 
+        {% endif %}
           </td>
          </tr>
         {% endfor %}
         </tbody>
     </table>
 
+{% if is_granted('ROLE_ADMIN') %}
     <div class="text-right">
     <a href="{{ path('pages.adminpages.new') }}" class="btn btn-primary">Créer un article</a>
     </div>
+{% endif %}
 
 </div>    
 {% endblock %}
